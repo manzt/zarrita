@@ -147,7 +147,7 @@ def _check_dtype(dtype: Any) -> np.dtype:
     if not isinstance(dtype, np.dtype):
         dtype = np.dtype(dtype)
     assert dtype.str in {
-        "|b1", "i1", "u1",
+        "|b1", "|i1", "|u1",
         "<i2", "<i4", "<i8",
         ">i2", ">i4", ">i8",
         "<u2", "<u4", "<u8",
